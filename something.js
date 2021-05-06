@@ -1,9 +1,10 @@
 function expandNav() {
     var x=document.getElementsByClassName("list-content");
-    if (x.style.display === "none") {
-        x.style.display = "block";
+    for(var i=0; i < x.length; i++)
+    if (x[i].style.display === "block") {
+        x[i].style.display = "none";
       } else {
-        x.style.display = "none";
+        x[i].style.display = "block"; 
       }
 }
 
